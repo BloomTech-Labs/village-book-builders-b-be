@@ -122,6 +122,15 @@
       "email": "teacher@tea.com",
       "password": "$2a$10$r0Msdne1kGtCR1tsCiOH5.44e/dQ0G.AGn3WlKPgIG9OHWY.mPJ2W",
       "id": 19
+    },
+    {
+      "email": "a@a.com",
+      "password": "$2a$10$3Z83fo3Z/9ZbIUjq4upNo.Eeghwzga9KZiZ0/E4tpZLG95mamhnqy",
+      "authFields": [
+        "role"
+      ],
+      "role": "headmaster",
+      "id": 20
     }
   ],
   "teacher": [
