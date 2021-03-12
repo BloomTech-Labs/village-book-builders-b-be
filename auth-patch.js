@@ -9,8 +9,6 @@
 
 // Step 1. npm install
 // Step 2. npm run patch
-// Step 3. Go into db.json and add the following key(s) to
-// the existing users (or create a new one)
 //    Make sure each user has a role and an authFields array, like so:
 // {
 //     "email": "a@a.com",
