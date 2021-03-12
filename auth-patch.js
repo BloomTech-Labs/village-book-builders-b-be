@@ -33,6 +33,23 @@ const jsonUsersFile = join(jsonServerAuth, 'dist', 'users.js');
 const jsonRenamedFile = join(jsonServerAuth, 'dist', 'users_old.js');
 const newUsersFile = join(__dirname, 'users.js');
 
+const updateDB = () => {
+	const db = JSON.parse(fs.readFileSync('./db.json'));
+	const { users } = db;
+
+	const newUsers = users.map((user) => {
+		if (user.id >= 16) {
+			user.role = 'headmaster';
+			user.authFields = ['role'];
+		}
+		return user;
+	});
+
+	db.users = newUsers;
+
+	fs.writeFileSync('./db.json', JSON.stringify(db, null, 2));
+};
+
 try {
 	if (!fs.existsSync(jsonServerAuth) || !fs.existsSync(jsonUsersFile) || !fs.existsSync(newUsersFile))
 		throw new Error(
@@ -54,6 +71,11 @@ try {
 
 	console.log('Copying over the patched users.js file into the package..');
 	fs.copyFileSync(newUsersFile, jsonUsersFile);
+
+	console.log(
+		'Making sure that all of the recently created users in the database (id over 16) have the necessary fields...'
+	);
+	updateDB();
 
 	console.log('Done. You should be able to run npm start now.');
 } catch (error) {
