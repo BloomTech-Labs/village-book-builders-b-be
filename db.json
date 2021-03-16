@@ -92,13 +92,16 @@
 		{
 			"email": "Mike@mike.com",
 			"password": "$2a$10$sFdfKAwrIfS2IfgCbAGJMOA558myj5JYMQyZQByu2/toRH4Tqt.Sa",
-			"id": 14
+			"id": 14,
+			"role": "headmaster",
+			"authFields": ["role"]
 		},
 		{
 			"email": "mike@mikeeeee.com",
 			"password": "$2a$10$AvmxrYI76QTSv7d10xvfQOtX7obOqlmfpZdWKpAeDOo23hDx7MBly",
 			"role": "headmaster",
-			"id": 15
+			"id": 15,
+			"authFields": ["role"]
 		},
 		{
 			"email": "email@email.com",
