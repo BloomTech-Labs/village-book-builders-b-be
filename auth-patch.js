@@ -64,8 +64,10 @@ try {
 
 	console.log('Found the json-sever-auth module & the users.js file.');
 
-	console.log('Renaming the existing users.js file in the package to users_old.js (just in case)..');
-	fs.renameSync(jsonUsersFile, jsonRenamedFile);
+	if (!fs.existsSync(jsonRenamedFile)) {
+		console.log('Renaming the existing users.js file in the package to users_old.js (just in case)..');
+		fs.renameSync(jsonUsersFile, jsonRenamedFile);
+	}
 
 	console.log('Copying over the patched users.js file into the package..');
 	fs.copyFileSync(newUsersFile, jsonUsersFile);
