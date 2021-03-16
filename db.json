@@ -1340,9 +1340,9 @@
 			"mentorId": [1],
 			"menteeId": [1, 2],
 			"topic": "sciences",
-			"location": "country",
-			"village": "village",
-			"library": "library 1",
+			"locationId": 1,
+			"villageId": 2,
+			"libraryId": 1,
 			"computerId": 1
 		},
 		{
@@ -1353,9 +1353,10 @@
 			"mentorId": [2],
 			"menteeId": [1, 2],
 			"topic": "math",
-			"location": "country",
-			"village": "village",
-			"library": "library 2"
+			"locationId": 2,
+			"villageId": 1,
+			"libraryId": 2,
+			"computerId": 3
 		},
 		{
 			"title": "test",
@@ -1365,9 +1366,10 @@
 			"mentorId": [2],
 			"menteeId": [1, 2],
 			"topic": "sciences",
-			"location": "country",
-			"village": "village",
-			"library": "library 3"
+			"locationId": 3,
+			"villageId": 2,
+			"libraryId": 3,
+			"computerId": 2
 		}
 	]
 }
