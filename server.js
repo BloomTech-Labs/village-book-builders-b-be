@@ -1,10 +1,10 @@
 const port = process.env.PORT || 5000;
-const jsonServer = require("json-server");
-const auth = require("json-server-auth");
-const cors = require("cors");
+const jsonServer = require('json-server-relationship');
+const auth = require('json-server-auth');
+const cors = require('cors');
 
 const app = jsonServer.create();
-const router = jsonServer.router("db.json");
+const router = jsonServer.router('db.json');
 
 app.use(cors());
 app.use(auth);
@@ -15,6 +15,4 @@ app.db = router.db;
 
 app.use(router);
 
-app.listen(port, () =>
-  console.log(`\n** Running on port ${port} **\t http://localhost:${port}/\n`)
-);
+app.listen(port, () => console.log(`\n** Running on port ${port} **\t http://localhost:${port}/\n`));
