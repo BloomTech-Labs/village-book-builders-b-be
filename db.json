@@ -592,6 +592,8 @@
 				"time_zone": "Asia/Tashkent",
 				"day": "Monday",
 				"time": "09:00",
+				"as_early_as": "09:00",
+				"as_late_as": "10:00",
 				"methods": ["phone", "duo", "twitter"]
 			}
 		},
@@ -610,6 +612,8 @@
 				"time_zone": "America/Mexico_City",
 				"day": "Tuesday",
 				"time": "10:00",
+				"as_early_as": "10:00",
+				"as_late_as": "11:00",
 				"methods": ["phone", "wechat", "facebook"]
 			}
 		},
@@ -628,6 +632,8 @@
 				"time_zone": "Europe/Ljubljana",
 				"day": "Wednesday",
 				"time": "09:00",
+				"as_early_as": "09:00",
+				"as_late_as": "10:00",
 				"methods": ["mail", "wechat", "facebook"]
 			}
 		},
@@ -646,6 +652,8 @@
 				"time_zone": "America/Tijuana",
 				"day": "Thursday",
 				"time": "10:00",
+				"as_early_as": "10:00",
+				"as_late_as": "11:00",
 				"methods": ["email", "wechat", "facebook"]
 			}
 		},
@@ -664,6 +672,8 @@
 				"time_zone": "Europe/Dublin",
 				"day": "Friday",
 				"time": "09:00",
+				"as_early_as": "09:00",
+				"as_late_as": "10:00",
 				"methods": ["phone", "wechat", "duo"]
 			}
 		},
@@ -682,6 +692,8 @@
 				"time_zone": "Pacific/Tongatapu",
 				"day": "Saturday",
 				"time": "10:00",
+				"as_early_as": "10:00",
+				"as_late_as": "11:00",
 				"methods": ["phone", "email", "mail"]
 			}
 		}
